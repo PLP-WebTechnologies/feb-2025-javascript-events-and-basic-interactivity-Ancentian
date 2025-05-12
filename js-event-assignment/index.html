@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Interactive Playground</h1>
+        
+        <!-- Event Handling Section -->
+        <section id="event-handling">
+            <h2>Event Handling</h2>
+            
+            <div class="event-box">
+                <button id="click-button">Click Me!</button>
+                <p id="click-output">Button not clicked yet</p>
+            </div>
+            
+            <div class="event-box hover-box">
+                <p>Hover over me!</p>
+                <p id="hover-output"></p>
+            </div>
+            
+            <div class="event-box">
+                <div class="form-group">
+                    <input type="text"  id="keypress-input" placeholder="Type something...">
+                </div>
+                <p id="keypress-output">No keypress detected yet</p>
+            </div>
+            
+            <div class="event-box secret-box">
+                <p>Double click or long press me for a secret!</p>
+                <p id="secret-output"></p>
+            </div>
+        </section>
+        
+        <!-- Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-box">
+                <button id="color-changer">Change My Color</button>
+            </div>
+            
+            <div class="image-gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <img src="https://images.pexels.com/photos/31263006/pexels-photo-31263006/free-photo-of-skyline-view-of-modern-city-skyscrapers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gallery image 1" class="active">
+                    <img src="https://images.pexels.com/photos/31861424/pexels-photo-31861424/free-photo-of-dramatic-coastal-cave-with-footprints-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gallery image 2">
+                    <img src="https://images.pexels.com/photos/31884207/pexels-photo-31884207/free-photo-of-green-sea-turtle-glides-under-sunlit-ocean-waters.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gallery image 3">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <h3>Accordion Content</h3>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 1</button>
+                    <div class="accordion-content">
+                        <p>Content for section 1 goes here.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 2</button>
+                    <div class="accordion-content">
+                        <p>Content for section 2 goes here.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 3</button>
+                    <div class="accordion-content">
+                        <p>Content for section 3 goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Form Validation Section -->
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 characters)</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength">
+                        <div class="strength-meter"></div>
+                        <div class="strength-text"></div>
+                    </div>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
